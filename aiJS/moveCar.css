@@ -1,0 +1,46 @@
+.boundary {
+    background-color: aquamarine;
+    height: 500px;
+    width: 500px;
+}
+
+.car {
+    margin-top: 76px;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.road {
+    background-color: darkgrey;
+    display: inline-block;
+    width: 500px;
+    margin-top: 25%;
+    height: 200px;
+}
+
+.cross {
+    animation-name: zebra;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    background-repeat: repeat;
+}
+
+@keyframes zebra {
+    0% {
+        background-color: rgb(255, 255, 255);
+        left: 500px;
+        top: 100px;
+        width: 100px;
+        height: 10px;
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+        left: -100px;
+        top: 100px;
+        width: 100px;
+        height: 10px;
+    }
+}
