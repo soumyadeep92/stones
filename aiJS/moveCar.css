@@ -18,7 +18,7 @@
     height: 200px;
 }
 
-.cross1 {
+.lines {
     animation-name: zebra1;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -27,46 +27,59 @@
     background-repeat: repeat;
 }
 
-.cross2 {
-    animation-name: zebra2;
-    animation-duration: 40s;
-    /* animation-delay: 4s; */
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+#cross1 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 10px;
+    margin-left: 500px;
+    margin-top: 100px;
     position: relative;
-    background-repeat: repeat;
 }
+
+#cross2 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+}
+
+#cross3 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+}
+
+/* #cross4 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+}
+
+#cross5 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+    position: relative;
+} */
+
 
 @keyframes zebra1 {
     0% {
-        background-color: rgb(255, 255, 255);
         left: 500px;
         top: 100px;
-        width: 100px;
-        height: 10px;
     }
     100% {
-        background-color: rgb(255, 255, 255);
         left: -1000px;
         top: 100px;
-        width: 100px;
-        height: 10px;
-    }
-}
-
-@keyframes zebra2 {
-    0% {
-        background-color: rgb(15, 15, 15);
-        left: 100px;
-        top: 0px;
-        width: 100px;
-        height: 10px;
-    }
-    100% {
-        background-color: rgb(15, 15, 15);
-        left: 400px;
-        top: 0px;
-        width: 100px;
-        height: 10px;
     }
 }
