@@ -2,12 +2,14 @@
     background-color: aquamarine;
     height: 500px;
     width: 500px;
+    z-index: 1000;
 }
 
 .car {
-    margin-top: 76px;
+    margin-top: 86px;
     margin-left: 200px;
     position: absolute;
+    z-index: 900;
 }
 
 .road {
@@ -16,70 +18,108 @@
     width: 500px;
     margin-top: 25%;
     height: 200px;
+    position: relative;
+    z-index: 950;
 }
 
 .lines {
     animation-name: zebra1;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     position: relative;
     background-repeat: repeat;
+    z-index: 800;
 }
 
 #cross1 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 10px;
     margin-left: 500px;
-    margin-top: 100px;
-    position: relative;
+    margin-top: 0px;
 }
 
 #cross2 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 10px;
     margin-left: 200px;
     margin-top: 0px;
-    position: relative;
 }
 
 #cross3 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 10px;
     margin-left: 200px;
     margin-top: 0px;
-    position: relative;
 }
 
-/* #cross4 {
-    background-color: rgb(0, 0, 0);
+#cross4 {
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 10px;
     margin-left: 200px;
     margin-top: 0px;
-    position: relative;
 }
 
 #cross5 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100px;
     height: 10px;
     margin-left: 200px;
     margin-top: 0px;
-    position: relative;
-} */
+}
 
+#cross6 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+#cross7 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+#cross8 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+#cross9 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+
+#cross10 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 10px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
 
 @keyframes zebra1 {
     0% {
-        left: 500px;
+        left: 0px;
         top: 100px;
     }
+
     100% {
-        left: -1000px;
+        left: -1700px;
         top: 100px;
     }
 }
