@@ -44,6 +44,28 @@ function moveFront(margHori) {
     console.log(document.getElementsByClassName("car")[0].style.marginLeft);
 }
 
+let speedH = 40;
+function speedRight() {
+    let lineAnim = document.getElementsByClassName("lines")[0];
+    let speed = setInterval(() => {
+        if (speedH < 5) {
+            clearInterval(speed);
+        }
+        speedH--;
+        lineAnim.style.animationDuration = speedH + "s";
+        console.log(lineAnim.style.animationDuration);
+    }, 71);
+}
+function speedLeft() {
+    let lineAnim = document.getElementsByClassName("lines")[0];
+    let speed = setInterval(() => {
+        if (speedH > 50) {
+            clearInterval(speed);
+        }
+        speedH++;
+        lineAnim.style.animationDuration = speedH + "s";
+    }, 71);
+}
 // let marginSpeed = 0;
 // function speedRight(margHori) {
 //     if (margHori == "") {
