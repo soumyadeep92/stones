@@ -48,10 +48,10 @@ let speedH = 40;
 function speedRight() {
     let lineAnim = document.getElementsByClassName("lines")[0];
     let speed = setInterval(() => {
-        if (speedH < 5) {
+        if (speedH < 25) {
             clearInterval(speed);
         }
-        speedH--;
+        speedH -= 0.2;
         lineAnim.style.animationDuration = speedH + "s";
         console.log(lineAnim.style.animationDuration);
     }, 71);
@@ -62,7 +62,7 @@ function speedLeft() {
         if (speedH > 50) {
             clearInterval(speed);
         }
-        speedH++;
+        speedH += 0.2;
         lineAnim.style.animationDuration = speedH + "s";
     }, 71);
 }
