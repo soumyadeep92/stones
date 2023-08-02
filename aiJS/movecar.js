@@ -66,6 +66,7 @@ function speedLeft() {
         lineAnim.style.animationDuration = speedH + "s";
     }, 71);
 }
+
 // let marginSpeed = 0;
 // function speedRight(margHori) {
 //     if (margHori == "") {
