@@ -47,23 +47,24 @@ function moveFront(margHori) {
 let speedH = 40;
 function speedRight() {
     let lineAnim = document.getElementsByClassName("lines")[0];
-    let speed = setInterval(() => {
-        if (speedH < 5) {
+    let speed = setTimeout(() => {
+        if (speedH < 15) {
             clearInterval(speed);
         }
-        speedH--;
+        speedH-=7;
         lineAnim.style.animationDuration = speedH + "s";
         console.log(lineAnim.style.animationDuration);
     }, 71);
 }
 function speedLeft() {
     let lineAnim = document.getElementsByClassName("lines")[0];
-    let speed = setInterval(() => {
+    let speed = setTimeout(() => {
         if (speedH > 50) {
             clearInterval(speed);
         }
-        speedH++;
+        speedH+=3;
         lineAnim.style.animationDuration = speedH + "s";
+        console.log(lineAnim.style.animationDuration);
     }, 71);
 }
 
