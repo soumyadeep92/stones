@@ -64,8 +64,10 @@ function speedLeft() {
         }
         speedH += 4;
         lineAnim.style.animationDuration = speedH + "s";
+        console.log(lineAnim.style.animationDuration);
     }, 71);
 }
+
 // let marginSpeed = 0;
 // function speedRight(margHori) {
 //     if (margHori == "") {
